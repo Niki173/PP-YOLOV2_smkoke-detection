@@ -1,8 +1,3 @@
-# Python代码仓库模板
-
-![GitHub forks](https://img.shields.io/github/forks/GT-ZhangAcer/PythonRepository-Template?style=for-the-badge) ![GitHub Repo stars](https://img.shields.io/github/stars/GT-ZhangAcer/PythonRepository-Template?style=for-the-badge) 
-
-这是一个简单的迁移模板，使用者只需在[模板仓库](https://github.com/GT-ZhangAcer/PythonRepository-Template)中点击[use this template](https://github.com/GT-ZhangAcer/PythonRepository-Template/generate)即可创建属于自己的具备前端页面空白Paddle项目。
 
 
 ## 项目结构
@@ -15,18 +10,30 @@
 --README.md 项目说明文件，可使用Markdowm编辑器进行编辑。
 --requirements.txt Python项目依赖列表
 ```  
-### gh-pages分支
-该分支下默认会给出静态页面文件，在使用该模板后将自动生成一个项目介绍网页`https://GitHub昵称.github.io/项目名`，我们只需对该分支下的`index.md`文件进行修改即可操控这个页面。
+# **[PP-YOLOV2保姆级教程]使用自定义数据集实现吸烟识别预测**
 
-## 使用方法
+## **PP-YOLOV2介绍**
 
-### Step1 使用模板仓库创建一个新的个人仓库
-进入[模板仓库]()主页，获取最新模板或点击[此处](https://github.com/GT-ZhangAcer/PythonRepository-Template/generate)立即创建一个这样的特殊仓库。
-<img src="https://ai-studio-static-online.cdn.bcebos.com/77a8ffd9cd9b4953a39f609bb2b0a4903bc046f354944d5d9ee776676f580095" width="800px">  
-简单填写仓库信息  
-<img src="https://ai-studio-static-online.cdn.bcebos.com/e42d4a7b3a064e788b0761570b19b27e18f19a9eeba44c21abf22d7270e38fda" width="800px">
+通过结合多项有效的改进，在COCO2017上将PP-YOLO的性能从45.9％mAP提升到49.5％mAP。称之为PP-YOLOv2。
 
-### Step2 上传项目文件至个人仓库
-<img src="https://ai-studio-static-online.cdn.bcebos.com/81ed71bc5ab74d01ab3ed244b987a08b7f3664baecf4475f8c337a2cbfcb04e5" width="800px">  
-<img src="https://ai-studio-static-online.cdn.bcebos.com/069da53af0ca4cbe8f2de962d2cd3e2d6dbbba9e44d9411bb0bd8dda8a7c1b52" width="800px"> 
+在速度方面，PP-YOLOv2在640x640输入尺寸下以68.9FPS的速度运行。具有TensorRT，FP16精度和Batch=1的Paddle推理引擎进一步提高了PP-YOLOv2的推理速度，达到了106.5 FPS。这样的性能超过了具有大致相同数量的参数（即YOLOv4-CSP，YOLOv5l）的现有目标检测器。此外，带有ResNet101的PP-YOLOv2在COCO2017测试开发上达到了50.3％的mAP。
+
+![](https://ai-studio-static-online.cdn.bcebos.com/9b582f8b16254aa285e03800894fa7f8142620dc61e241838a2ddae7d08ad58c)
+
+
+## **手把手教你在AIStudio平台上使用PaddleDetection API训练自己的数据集**
+**教程目的：** 通过PaddleDetection API熟悉经典的目标检测框架，为下一步自己手写实现目标检测网络打基础
+
+**教程内容：** 以PaddleDetection API中的特色模型为例，介绍网络结构，以及如何使用此框架训练自己的数据集
+
+**数据准备：** 本教程程基于pp_fall数据集，为方便读者体验，已经上传至 data/data94796/pp_smoke.zip。
+
+**PaddelDetection：** 为方便读者体验，存放在PaddleDetection，使用PP-YOLOV2。
+
+**其他说明：** 本教程所有命令均在Notebook中执行。
+
+
+## **检测效果**
+
+![](https://ai-studio-static-online.cdn.bcebos.com/802e7adbff0c4ddb885711c42ef2cf9fb61d53ed247b423891e7bd4cfb753f55)
 
